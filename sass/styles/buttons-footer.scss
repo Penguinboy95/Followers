@@ -1,33 +1,31 @@
 .buttonGroup {
-  height: 400px;
-  margin-top: 15px;
+  margin-top: 20px;
   background: linear-gradient(to top, #49c3ec, #b6fffb);
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
 }
 
 .buttonGroup__button {
 	display: flex;
-	align-items: center;
-	margin-top: 25px;
-	margin-bottom: 15px;
-	height: 35px;
+  justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	height: 10vh;
 	width: 100%;
 }
 
 .buttonGroup__button-first{
-	margin-top: 35px;
+	margin-top: 10px;
 }
 
-.button {	
-  justify-content: flex-start;
-  height: 70px;
+.button {
   position: relative;
   margin:0 auto;
   width: 90%;
+  height: 100%;
   background-color: white;
   border: none;
   border-radius: 35px;
@@ -37,16 +35,16 @@
   color: rgb(95, 115, 126);
   line-height: 1.2;
   padding-top: 10px;
-  .low-label {
-  	font-size: 11px;
-  	margin-bottom: 12px;
-  	line-height: 1.2;
-  }
-
 }
 
-.buttonGroup__button-bold {
-  font-size: 19px;
+.low-label {
+  font-size: 11px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.bold-text {
+  font-size: 18px;
   margin-left: 5px;
   font-family: "Poppins", serif;
   color: rgb(95, 115, 126);
@@ -55,3 +53,6 @@
   text-align: center;
 }
 
+#last-button {
+  margin-bottom: 15px;
+}

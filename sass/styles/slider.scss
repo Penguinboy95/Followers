@@ -1,29 +1,52 @@
 .slider {
-  padding-top: 55px;
+  padding-top: 30px;
 }
 
-.slider__title {
-  font-size: 14px;
-  font-family: "Poppins", serif;
-  color: rgb(95, 115, 126);
-  line-height: 0.99;
-  letter-spacing: -0.2px;
-  text-align: center;
-  -moz-transform: matrix( 1.58282468506143,0,0,1.58805362222483,0,0);
-  -ms-transform: matrix( 1.58282468506143,0,0,1.58805362222483,0,0);
-  img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 2.5vh;
-    margin-top: 5vh;
-  }
+.slider__wrapper {
+  overflow: hidden;
+  width: 100%;
 }
 
 .slider__body {
   display: flex;
+  flex-direction: row;
+  width: 4000px;
+}
+
+.slider__slide {
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+
+}
+
+.slider__slide-first-title {
+  font-size: 14px;
+  font-family: "Poppins", serif;
+  color: rgb(95, 115, 126);
+  line-height: 0.99;    
+  letter-spacing: -0.2px;    
+  text-align: center;
+}
+.slider__slide-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-content__title {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  font-family: "Poppins";
+  color: rgb(95, 115, 126);
+  font-weight: bold;
+  line-height: 0.967;
+}
+
+.slider-content__icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .first-item {
@@ -37,6 +60,7 @@
     line-height: 0.967;
     text-align: left;
     position: relative;
+
 }
 
 .slider__circle {
@@ -49,10 +73,9 @@
   float: left;
   margin-bottom: 8px;
   img {
-    diplay:block;
+    display: block;
     margin-top: 8px;
   }
-
 }
 
 .slider__text-item {
@@ -61,13 +84,6 @@
   left: 10px;
   float: left;
 }
-
-.flex-helper {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 
 .circle1 {
   background-image: linear-gradient( -90deg, rgb(121,254,245) 1%, rgb(61,189,234) 100%);
@@ -94,7 +110,7 @@
 }
 
 .slider__control {
-  margin-top: 7px;
+  margin-top: 10px;
   margin-left: 8px;
   display: flex;
   flex-direction: row;
@@ -118,6 +134,17 @@
 
 }
 
-.slider__point_active {
+.slider__point-active {
   background-color: #97eef6;
+}
+
+.description {
+  display: flex;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-top: 20px;
+  font-size: 11px;
+  font-family: "Poppins";
+  color: rgb(95, 115, 126);
+  line-height: 1.9;
 }
